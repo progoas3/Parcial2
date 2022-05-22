@@ -9,23 +9,19 @@ const routes: Routes = [
   },
   {
     path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
-    path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+    loadChildren: () => import('../folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+    loadChildren: () => import('../registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
     path: 'iniciar-sesion',
-    loadChildren: () => import('./iniciar-sesion/iniciar-sesion.module').then( m => m.IniciarSesionPageModule)
+    loadChildren: () => import('../iniciar-sesion/iniciar-sesion.module').then( m => m.IniciarSesionPageModule)
   },
   {
     path: 'creditos',
-    loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
+    loadChildren: () => import('../creditos/creditos.module').then( m => m.CreditosPageModule)
   },
 ];
 
